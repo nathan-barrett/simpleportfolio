@@ -33,7 +33,7 @@ class Contact extends Component {
     const name = document.getElementById('name').value;
     const email = document.getElementById('inputEmail').value;
     const message = document.getElementById('message').value;
-    const form = await axios.post('/api/form', {
+    await axios.post('/api/form', {
       name,
       email,
       message
