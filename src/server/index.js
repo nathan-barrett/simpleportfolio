@@ -14,7 +14,7 @@ const transport = {
   secure: true,
   auth: {
     user: 'demeules.barrett@gmail.com', // generated ethereal user
-    pass: 'lincoln24' // generated ethereal password
+    pass: '' // generated ethereal password
   }
 };
 const transporter = nodemailer.createTransport(transport);
@@ -26,8 +26,9 @@ app.post('/api/form', (req, res) => {
   const content = `name: ${name} \n email: ${email} \n message: ${message} `;
   let mailOptions = {
     from: name,
-    to: '',
-    subject: ''
+    to: 'demeules.barrett@gmail.com',
+    subject: 'New Message',
+    text: content
   };
 
   transporter.sendMail(mailOptions, (error, response) => {
