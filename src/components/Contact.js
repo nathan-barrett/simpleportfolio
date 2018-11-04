@@ -45,7 +45,8 @@ class Contact extends Component {
         <div className={headerImage}>
           <h2>Hey. Lets talk.</h2>
         </div>
-        <div className={formContainer}>
+        {/* For future use /*}
+        {/* <div className={formContainer}>
           <form method="POST" onSubmit={this.handleSubmit.bind(this)}>
             <div>
               <label htmlFor="name">Name</label>
@@ -61,7 +62,7 @@ class Contact extends Component {
             </div>
             <button type="submit">Submit</button>
           </form>
-        </div>
+        </div> */}
       </div>
     );
   }

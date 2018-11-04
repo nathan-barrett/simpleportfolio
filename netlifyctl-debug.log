@@ -1,0 +1,71 @@
+[37mDEBU[0m[30 Oct 18 19:50 -0700] PreRun                                        [37marguments[0m=[] [37mcommand[0m=assets
+[37mDEBU[0m[30 Oct 18 19:50 -0700] configure debug middleware                   
+[37mDEBU[0m[30 Oct 18 19:50 -0700] configure logging middleware                 
+[37mDEBU[0m[30 Oct 18 19:50 -0700] setup logger middleware: panic               
+[37mDEBU[0m[30 Oct 18 19:50 -0700] configure auth middleware                    
+[37mDEBU[0m[30 Oct 18 19:50 -0700] setup credentials                             [37mcredentials[0m=0x146b000
+[37mDEBU[0m[30 Oct 18 19:50 -0700] configure client middleware                  
+[37mDEBU[0m[30 Oct 18 19:50 -0700] setup API endpoint                            [37mendpoint[0m="https://api.netlify.com"
+[37mDEBU[0m[30 Oct 18 19:50 -0700] configure site middleware                    
+[37mDEBU[0m[30 Oct 18 19:50 -0700] Querying for existing sites                  
+[37mDEBU[0m[30 Oct 18 19:50 -0700] GET /api/v1/sites?filter=all&name=n HTTP/1.1
+Host: api.netlify.com
+User-Agent: netlifyctl
+Accept: application/json
+Authorization: Bearer 28f8812335932aed262010e7d2fda5229515dd80cbb832a9e6455aef02d69e9d
+Accept-Encoding: gzip
+
+
+ 
+[37mDEBU[0m[30 Oct 18 19:50 -0700] HTTP/1.1 200 OK
+Transfer-Encoding: chunked
+Alt-Svc: clear
+Cache-Control: max-age=0, private, must-revalidate
+Content-Type: application/json; charset=utf-8
+Date: Wed, 31 Oct 2018 02:50:42 GMT
+Etag: W/"381d298bd34a72140045141bf8f292f8"
+Link: <https://api.netlify.com/api/v1/sites?filter=all&name=n&page=1>; rel=last
+Total: 1
+Vary: Origin
+Via: 1.1 google
+X-Frame-Options: ALLOWALL
+X-Ratelimit-Limit: 100000000
+X-Ratelimit-Remaining: 99999999
+X-Ratelimit-Reset: 2018-10-31 02:51:42 UTC
+X-Request-Id: 2c7d5ba4-f805-426e-8951-b48916143aed
+X-Runtime: 0.034049
+
+132d
+[{"id":"37699277-6240-4a7a-b102-36d20b6d0e11","site_id":"37699277-6240-4a7a-b102-36d20b6d0e11","plan":"nf_team_dev","plan_data":{"title":"Netlify Team Free","asset_acceleration":true,"form_processing":true,"cdn_propagation":"partial","build_gc_exchange":"buildbot-gc","build_node_pool":"buildbot-external-ssd","build_cluster":"ha2","domain_aliases":true,"secure_site":false,"prerendering":true,"proxying":true,"ssl":"custom","rate_cents":0,"yearly_rate_cents":0,"cdn_network":"free_cdn_network","branch_deploy":true,"managed_dns":true,"geo_ip":true,"split_testing":true,"id":"nf_team_dev"},"ssl_plan":null,"premium":false,"claimed":true,"name":"distracted-bell-734992","custom_domain":"www.heynathanbarrett.com","domain_aliases":[],"password":null,"notification_email":null,"url":"https://www.heynathanbarrett.com","admin_url":"https://app.netlify.com/sites/distracted-bell-734992","deploy_id":"5b6cbb33c6aed617661516c3","build_id":"","deploy_url":"http://master.distracted-bell-734992.netlify.com","state":"current","screenshot_url":"https://353a23c500dde3b2ad58-c49fe7e7355d384845270f4a7a0a7aa1.ssl.cf2.rackcdn.com/5b6cbb33c6aed617661516c3/screenshot.png","created_at":"2018-06-10T14:42:54.607Z","updated_at":"2018-10-25T02:01:21.967Z","user_id":"5af07f293672df6347873398","error_message":null,"ssl":true,"ssl_url":"https://www.heynathanbarrett.com","force_ssl":true,"ssl_status":null,"max_domain_aliases":100,"build_settings":{"cmd":"npm run-script build","dir":"build","env":{},"created_at":"2018-08-06T02:46:54.861Z","updated_at":"2018-10-31T01:06:22.536Z","public_repo":true,"private_logs":null,"allowed_branches":["master"],"functions_dir":null,"installation_id":423949,"skip_prs":null,"provider":"github","repo_type":"git","repo_url":"https://github.com/nathan-barrett/Portfolio-React","repo_branch":"master","repo_path":"nathan-barrett/Portfolio-React","base":null,"deploy_key_id":"5b67b69d3813f00a3cdb06ae"},"processing_settings":{"css":{"bundle":true,"minify":true},"js":{"bundle":true,"minify":true},"images":{"optimize":true},"html":{"pretty_urls":true},"skip":true},"prerender":null,"prerender_headers":null,"deploy_hook":"https://api.netlify.com/hooks/github","published_deploy":{"id":"5b6cbb33c6aed617661516c3","site_id":"37699277-6240-4a7a-b102-36d20b6d0e11","build_id":"5b6cbb33c6aed617661516c4","state":"ready","name":"distracted-bell-734992","url":"https://www.heynathanbarrett.com","ssl_url":"https://www.heynathanbarrett.com","admin_url":"https://app.netlify.com/sites/distracted-bell-734992","deploy_url":"http://master.distracted-bell-734992.netlify.com","deploy_ssl_url":"https://master--distracted-bell-734992.netlify.com","created_at":"2018-08-09T22:07:47.219Z","updated_at":"2018-10-25T02:01:20.455Z","user_id":"5af07f293672df6347873398","error_message":null,"required":[],"required_functions":[],"commit_ref":"36c6753a2ce4f11f5a735a36574d2ef9bbaf87fd","review_id":null,"branch":"master","commit_url":"https://github.com/nathan-barrett/Portfolio-React/commit/36c6753a2ce4f11f5a735a36574d2ef9bbaf87fd","skipped":null,"locked":null,"log_access_attributes":{"type":"firebase","url":"https://netlify.firebaseio.com/builds/5b6cbb33c6aed617661516c4/log"},"title":"fixed links on portfolio site and home page","review_url":null,"published_at":"2018-08-09T22:08:51.541Z","context":"production","deploy_time":62,"available_functions":[],"summary":{"status":"unavailable","messages":[]},"screenshot_url":"https://353a23c500dde3b2ad58-c49fe7e7355d384845270f4a7a0a7aa1.ssl.cf2.rackcdn.com/5b6cbb33c6aed617661516c3/screenshot.png","site_capabilities":{"title":"Netlify Team Free","asset_acceleration":true,"form_processing":true,"cdn_propagation":"partial","build_gc_exchange":"buildbot-gc","build_node_pool":"buildbot-external-ssd","build_cluster":"ha2","domain_aliases":true,"secure_site":false,"prerendering":true,"proxying":true,"ssl":"custom","rate_cents":0,"yearly_rate_cents":0,"cdn_network":"free_cdn_network","branch_deploy":true,"managed_dns":true,"geo_ip":true,"split_testing":true,"id":"nf_team_dev"}},"managed_dns":true,"jwt_secret":null,"account_slug":"nathan-barrett","account_name":"Nathan Barrett","account_type":"personal","capabilities":{"title":"Netlify Team Free","asset_acceleration":true,"form_processing":true,"cdn_propagation":"partial","build_gc_exchange":"buildbot-gc","build_node_pool":"buildbot-external-ssd","build_cluster":"ha2","domain_aliases":true,"secure_site":false,"prerendering":true,"proxying":true,"ssl":"custom","rate_cents":0,"yearly_rate_cents":0,"cdn_network":"free_cdn_network","branch_deploy":true,"managed_dns":true,"geo_ip":true,"split_testing":true,"id":"nf_team_dev"},"active_subscription_ids":[],"external_contributors_enabled":true,"paid_individual_site_subscription":false,"dns_zone_id":null,"identity_instance_id":null,"use_functions":null,"parent_user_id":null,"automatic_tls_provisioning":null,"disabled":null,"lifecycle_state":"active"}]
+0
+
+
+ 
+[37mDEBU[0m[30 Oct 18 19:50 -0700] Listing site assets                           [37msite_id[0m=37699277-6240-4a7a-b102-36d20b6d0e11
+[37mDEBU[0m[30 Oct 18 19:50 -0700] GET /api/v1/sites/37699277-6240-4a7a-b102-36d20b6d0e11/assets HTTP/1.1
+Host: api.netlify.com
+User-Agent: netlifyctl
+Accept: application/json
+Authorization: Bearer 28f8812335932aed262010e7d2fda5229515dd80cbb832a9e6455aef02d69e9d
+Accept-Encoding: gzip
+
+
+ 
+[37mDEBU[0m[30 Oct 18 19:50 -0700] HTTP/1.1 404 Not Found
+Content-Length: 34
+Alt-Svc: clear
+Cache-Control: no-cache
+Content-Type: application/json; charset=utf-8
+Date: Wed, 31 Oct 2018 02:50:42 GMT
+Vary: Origin
+Via: 1.1 google
+X-Frame-Options: ALLOWALL
+X-Ratelimit-Limit: 100000000
+X-Ratelimit-Remaining: 99999999
+X-Ratelimit-Reset: 2018-10-31 02:51:42 UTC
+X-Request-Id: 7f113264-9cee-45c8-8fc4-c8d4ac36410c
+X-Runtime: 0.027677
+
+{"code":404,"message":"Not Found"}
+ 
+[31mERRO[0m[30 Oct 18 19:50 -0700] command failed                                [31merror[0m="[GET /sites/{site_id}/assets][404] listSiteAssets default  &{Code:404 Message:Not Found}"
