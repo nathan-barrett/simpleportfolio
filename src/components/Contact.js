@@ -22,10 +22,10 @@ const headerImage = css(`
 	}
 `);
 
-const formContainer = css(`
-    width: 100%;
-    padding-top: 10px;
-`);
+// const formContainer = css(`
+//     width: 100%;
+//     padding-top: 10px;
+// `);
 
 class Contact extends Component {
   async handleSubmit(e) {
