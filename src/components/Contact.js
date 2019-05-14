@@ -22,12 +22,6 @@ const headerImage = css(`
         text-align: center;
 	}
 `);
-
-// const formContainer = css(`
-//     width: 100%;
-//     padding-top: 10px;
-// `);
-
 const contactContainer = css(`
   width: 100%;
   margin-top: 20px;
@@ -40,30 +34,32 @@ const contactContainer = css(`
 `);
 
 class Contact extends Component {
-  async handleSubmit(e) {
-    e.preventDefault();
-    const name = document.getElementById('name').value;
-    const email = document.getElementById('inputEmail').value;
-    const message = document.getElementById('message').value;
-    await axios.post('/api/form', {
-      name,
-      email,
-      message
-    });
-  }
-  render() {
-    return (
-      <div>
-        <div className={headerImage}>
-          <h2>Hey, lets talk.</h2>
-        </div>
-        <div className={contactContainer}>
-          <p>
-            Please free to reach out to me any time for development opportunities, pricing information, or if you just
-            want to grab a cup of coffee. I am currently looking for work and would love to hear from you!
-          </p>
-        </div>
-        {/* For future use /*}
+	async handleSubmit(e) {
+		e.preventDefault();
+		const name = document.getElementById('name').value;
+		const email = document.getElementById('inputEmail').value;
+		const message = document.getElementById('message').value;
+		await axios.post('/api/form', {
+			name,
+			email,
+			message
+		});
+	}
+	render() {
+		return (
+			<div>
+				<div className={headerImage}>
+					<h2>Hey, lets talk.</h2>
+				</div>
+				<div className={contactContainer}>
+					<p>
+						Please free to reach out to me any time for development
+						opportunities, pricing information, or if you just want
+						to grab a cup of coffee. I am currently looking for work
+						and would love to hear from you!
+					</p>
+				</div>
+				{/* For future use /*}
         {/* <div className={formContainer}>
           <form method="POST" onSubmit={this.handleSubmit.bind(this)}>
             <div>
@@ -81,9 +77,9 @@ class Contact extends Component {
             <button type="submit">Submit</button>
           </form>
         </div> */}
-      </div>
-    );
-  }
+			</div>
+		);
+	}
 }
 
 export default Contact;
