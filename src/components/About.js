@@ -69,45 +69,50 @@ const aboutRightColumn = css(`
 `);
 
 const array = [
-  'a hot cup of coffee',
-  'learning with others',
-  'starting a new book',
-  'solving problems as a team',
-  'exploring the pacific northwest'
+	'a hot cup of coffee',
+	'learning with others',
+	'starting a new book',
+	'solving problems as a team',
+	'exploring the pacific northwest'
 ];
 
 const About = () => (
-  <div>
-    <div className={aboutImage}>
-      <h2>
-        I'm Nathan. <br /> I like to create thoughtful <br />
-        web sites.
-      </h2>
-    </div>
-    <div className={aboutContainer}>
-      <div className={aboutLeftColumn}>
-        <div>
-          <p>THINGS I LOVE</p>
-          <ul>{array.map((i) => [<li key={i}>{i}</li>])}</ul>
-        </div>
-      </div>
-      <div className={aboutRightColumn}>
-        <div>
-          <p>HELLO!</p>
-          <p>
-            I'm a Web Developer, working mostly in the front-end, but dabbling in back end as well. Currently, I am
-            enjoying working with React, Redux, TypeScript and GrpahQL. I'm currently lerning more anbout Python, Node
-            and Postgres.
-          </p>
-          <p>
-            I took a bit of an unusual path into development. After I went to college for History and Education, I moved
-            to Portland where I worked in both non-profits and in customer facing roles. I love being able to come up
-            with solutions for complex problems, and it sparked my interest in development.
-          </p>
-        </div>
-      </div>
-    </div>
-  </div>
+	<div>
+		<div className={aboutImage}>
+			<h2>
+				I'm Nathan. <br /> I like to create thoughtful <br />
+				web sites.
+			</h2>
+		</div>
+		<div className={aboutContainer}>
+			<div className={aboutLeftColumn}>
+				<div>
+					<p>THINGS I LOVE</p>
+					<ul>{array.map((i) => [<li key={i}>{i}</li>])}</ul>
+				</div>
+			</div>
+			<div className={aboutRightColumn}>
+				<div>
+					<p>HELLO!</p>
+					<p>
+						I'm a Web Developer, working mostly in the front-end,
+						but dabbling in back end as well. Currently, I am
+						enjoying working with React, Redux, TypeScript and
+						GrpahQL. I'm currently lerning more anbout Python, Node
+						and Postgres.
+					</p>
+					<p>
+						I took a bit of an unusual path into development. After
+						I went to college for History and Education, I moved to
+						Portland where I worked in both non-profits and in
+						customer facing roles. I love being able to come up with
+						solutions for complex problems, and it sparked my
+						interest in development.
+					</p>
+				</div>
+			</div>
+		</div>
+	</div>
 );
 
 export default About;

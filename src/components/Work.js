@@ -100,8 +100,15 @@ const Work = () => (
 			<div className={overlay}>
 				<h2 className={overlayTitle}>For Dogs Only</h2>
 				<div className={overlayText}>
-					<p>React Native application to set up dog play-dates using Redux state management</p>
-					<a href="https://github.com/nathan-barrett/ForDogsOnly" rel="noopener noreferrer" target="_blank">
+					<p>
+						React Native application to set up dog play-dates using
+						Redux state management
+					</p>
+					<a
+						href="https://github.com/nathan-barrett/ForDogsOnly"
+						rel="noopener noreferrer"
+						target="_blank"
+					>
 						GitHub Repository
 					</a>
 				</div>
@@ -112,8 +119,15 @@ const Work = () => (
 			<div className={overlay}>
 				<h2 className={overlayTitle}>Node To-do API</h2>
 				<div className={overlayText}>
-					<p>Node & Express API with authentication using JWT and MongoDB for NoSQL databse</p>
-					<a href="https://github.com/nathan-barrett/mongodb-node-todo" rel="noopener noreferrer" target="_blank">
+					<p>
+						Node & Express API with authentication using JWT and
+						MongoDB for NoSQL databse
+					</p>
+					<a
+						href="https://github.com/nathan-barrett/mongodb-node-todo"
+						rel="noopener noreferrer"
+						target="_blank"
+					>
 						GitHub Repository
 					</a>
 				</div>
@@ -125,7 +139,11 @@ const Work = () => (
 				<h2 className={overlayTitle}>Node Event Emitter</h2>
 				<div className={overlayText}>
 					<p>Event Emitter library using Node and ES6</p>
-					<a href="https://github.com/nathan-barrett/simple-event-emitter" rel="noopener noreferrer" target="_blank">
+					<a
+						href="https://github.com/nathan-barrett/simple-event-emitter"
+						rel="noopener noreferrer"
+						target="_blank"
+					>
 						GitHub Repository
 					</a>
 				</div>
@@ -136,8 +154,15 @@ const Work = () => (
 			<div className={overlay}>
 				<h2 className={overlayTitle}>Plantagotchi</h2>
 				<div className={overlayText}>
-					<p>Arduino application written in C++ that checks moisture and water house plants</p>
-					<a href="https://github.com/nathan-barrett/plantigotchi" rel="noopener noreferrer" target="_blank">
+					<p>
+						Arduino application written in C++ that checks moisture
+						and water house plants
+					</p>
+					<a
+						href="https://github.com/nathan-barrett/plantigotchi"
+						rel="noopener noreferrer"
+						target="_blank"
+					>
 						GitHub Repository
 					</a>
 				</div>
@@ -149,7 +174,11 @@ const Work = () => (
 				<h2 className={overlayTitle}>Pokemon JS</h2>
 				<div className={overlayText}>
 					<p>Pokemon clone using Angular and TypeScript</p>
-					<a href="https://github.com/nathan-barrett/PokemonJS" rel="noopener noreferrer" target="_blank">
+					<a
+						href="https://github.com/nathan-barrett/PokemonJS"
+						rel="noopener noreferrer"
+						target="_blank"
+					>
 						GitHub Repository
 					</a>
 				</div>
@@ -161,7 +190,11 @@ const Work = () => (
 				<h2 className={overlayTitle}>Stardew Valley Tribune</h2>
 				<div className={overlayText}>
 					<p>Web blog using Materialize framework</p>
-					<a href="https://github.com/nathan-barrett/StardewBlog" rel="noopener noreferrer" target="_blank">
+					<a
+						href="https://github.com/nathan-barrett/StardewBlog"
+						rel="noopener noreferrer"
+						target="_blank"
+					>
 						GitHub Repository
 					</a>
 				</div>
