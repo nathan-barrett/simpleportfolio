@@ -7,7 +7,7 @@ import table from '../images/table.jpg';
 
 const headerImage = css(`
 	width: 100%;
-	height: 400px;
+	height: 325px;
     background-image: url('${table}');
     background-repeat: no-repeat;
     background-size: cover;

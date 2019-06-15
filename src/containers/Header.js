@@ -1,6 +1,9 @@
 import React from 'react';
 import { css } from 'emotion';
 import { Link } from 'react-router-dom';
+import PropTypes from 'prop-types';
+import { withRouter } from 'react-router';
+/** Stylin' */
 const header_container = css({
 	fontFamily: "'Montserrat', sans-serif",
 	display: 'flex',
@@ -8,7 +11,7 @@ const header_container = css({
 	height: 60,
 	marginBottom: 10,
 	justifyContent: 'space-between',
-	div: {
+	section: {
 		alignSelf: 'center',
 		a: {
 			textDecoration: 'none',
@@ -22,10 +25,12 @@ const header_container = css({
 });
 
 const header_right = css({
+	alignSelf: 'flex-end',
 	ul: {
 		listStyle: 'none',
 		display: 'flex',
 		flexDirection: 'row',
+
 		li: {
 			a: {
 				color: 'grey',
@@ -41,25 +46,44 @@ const header_right = css({
 	}
 });
 
-const Header = () => (
-	<div className={header_container}>
-		<div>
-			<Link to="/">NATHAN BARRETT</Link>
-		</div>
-		<div className={header_right}>
-			<ul>
-				<li>
-					<Link to="/">About</Link>
-				</li>
-				<li>
-					<Link to="/work">Work</Link>
-				</li>
-				<li>
-					<Link to="/contact">Contact</Link>
-				</li>
-			</ul>
-		</div>
-	</div>
-);
+const selected = css({
+	borderBottom: '2px solid'
+});
+const Header = (props) => {
+	const { location } = props;
+	console.log(location);
+	return (
+		<header className={header_container}>
+			<section>
+				<Link to="/">NATHAN BARRETT</Link>
+			</section>
+			<nav className={header_right}>
+				<ul>
+					<li>
+						<Link className={location === '/' && selected} to="/">
+							About
+						</Link>
+					</li>
+					<li>
+						<Link
+							className={location === '/work' && selected}
+							to="/work"
+						>
+							Work
+						</Link>
+					</li>
+					<li>
+						<Link
+							className={location === '/contact' && selected}
+							to="/contact"
+						>
+							Contact
+						</Link>
+					</li>
+				</ul>
+			</nav>
+		</header>
+	);
+};
 
 export default Header;
