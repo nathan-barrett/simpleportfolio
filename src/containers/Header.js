@@ -1,8 +1,7 @@
 import React from 'react';
 import { css } from 'emotion';
 import { Link } from 'react-router-dom';
-import PropTypes from 'prop-types';
-import { withRouter } from 'react-router';
+
 /** Stylin' */
 const header_container = css({
 	fontFamily: "'Montserrat', sans-serif",
@@ -49,9 +48,8 @@ const header_right = css({
 const selected = css({
 	borderBottom: '2px solid'
 });
-const Header = (props) => {
-	const { location } = props;
-	console.log(location);
+const Header = () => {
+	const location = window.location.pathname;
 	return (
 		<header className={header_container}>
 			<section>
@@ -60,13 +58,16 @@ const Header = (props) => {
 			<nav className={header_right}>
 				<ul>
 					<li>
-						<Link className={location === '/' && selected} to="/">
+						<Link
+							className={location === '/' ? selected : ''}
+							to="/"
+						>
 							About
 						</Link>
 					</li>
 					<li>
 						<Link
-							className={location === '/work' && selected}
+							className={location === '/work' ? selected : ''}
 							to="/work"
 						>
 							Work
@@ -74,7 +75,7 @@ const Header = (props) => {
 					</li>
 					<li>
 						<Link
-							className={location === '/contact' && selected}
+							className={location === '/contact' ? selected : ''}
 							to="/contact"
 						>
 							Contact

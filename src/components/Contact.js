@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import axios from 'axios';
 import { css } from 'emotion';
 
-import contact from '../images/contact.jpg';
 import table from '../images/table.jpg';
 
 const headerImage = css(`
@@ -55,8 +54,7 @@ class Contact extends Component {
 					<p>
 						Please free to reach out to me any time for development
 						opportunities, pricing information, or if you just want
-						to grab a cup of coffee. I am currently looking for work
-						and would love to hear from you!
+						to grab a cup of coffee. I'd love to hear from you!
 					</p>
 				</div>
 				{/* For future use /*}

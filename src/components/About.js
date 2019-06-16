@@ -1,14 +1,7 @@
 import React from 'react';
 import { css } from 'emotion';
 
-import books from '../images/books.jpg';
-import forest from '../images/forest.jpg';
-import test1 from '../images/test1.jpg';
-import test2 from '../images/test2.jpg';
-import test3 from '../images/test3.jpg';
-import test4 from '../images/test4.jpg';
 import test5 from '../images/test5.jpg';
-import forest2 from '../images/forest-2.jpg';
 
 const aboutImage = css(`
 	width: 100%;
